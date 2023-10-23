@@ -5,6 +5,8 @@ body{
     background-color: #f8e8e8;
 }
 
+
+
 header{
     background-color: rgb(216, 84, 8);
     padding: 1px 0px 0px 0px;
@@ -104,4 +106,26 @@ footer {
 .carousel-inner{
 
     justify-content: center;
+}
+
+@media (max-width:1015px){
+    body{
+        background-color:;
+    }
+}
+
+@media (max-width:390px){
+    body{
+        
+        text-align: center;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    nav{
+        text-align: center;
+        width: 30px;
+    }
 }
