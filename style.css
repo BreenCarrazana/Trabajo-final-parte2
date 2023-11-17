@@ -9,7 +9,7 @@ body{
 
 header{
     background-color: rgb(216, 84, 8);
-    padding: 1px 0px 0px 0px;
+    margin-left: 20px;
 }
 
 
@@ -26,7 +26,8 @@ header h1{
 nav{
     background-color: #d10b0b;
     font-size: 20px;
-
+    height: 26px;
+    
 }
 
 nav ul{
@@ -50,6 +51,15 @@ nav ul li a:hover{
     background-color: rgba(0,0,0,0.3);
 }
 
+main {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+iframe{
+    margin-left: 30px;
+}
+
 .menu{
     width: 960px;
     margin: auto;
@@ -61,9 +71,19 @@ video{
     padding: 0px 0px 0px 192px;
 }
  
+.columnas{
+        overflow: hidden;
+        
+}
+
 .titulo1{
-    margin-top: 40px;
+    height: 290px;
+    width: 1130px;
+    margin-top: 20px;
+    float: left;
+    display: block;
  }
+
 
 .titulo2{
     text-align: center;
@@ -86,12 +106,15 @@ h2{
 
 .pago{
     margin-top: 60px;
+    margin-right: 10px;
 }
 
 .pago img{
+    width: 1345px;
     padding-left: 263px;
     padding-bottom: 50px;
 }
+    
 
 footer {
     background-color:rgb(216, 84, 8);
@@ -102,19 +125,128 @@ footer {
     
 }
 
+/*SERVICIOS*/
+
+.servicios{
+    border: 1px solid grey;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+.servicios .info{
+    width: 75%;
+}
+
+.servicios .info h4{
+    color: #d10b0b;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #b64848;
+    padding-bottom: 0.5em;
+}
+
+.servicios .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.servicios img{
+    border-radius: 0.8em;
+}
+
+.servicios:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+.servicios:nth-child(even) .info{
+    float: left;
+}
+
+.servicios:nth-child(odd) img{
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.servicios:nth-child(odd) .info{
+    float: right;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+    text-align: center;
+}
+
+/*NOVEDADES*/
+
+aside h4{
+    color: #d10b0b;
+}
+
+.contenedor{
+    display: flex;
+    gap: 115px;
+    justify-content: space-around;
+}
+
+.box{
+    width: 250px;
+    min-height: 100px;
+}
+.left{
+    flex-basis: 60%;
+}
+
+.right{
+    background-color: #ec7575;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    
+}
+
+/*CONTACTO*/
+
+.contacto{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+
+
+
+.columnaDerecha p{
+    font-size: 0.9em;
+
+}
+
+.columnaDerecha ul li{
+    font-size: 0.8em;
+}
+
+.formulario label{
+    vertical-align: top;
+    width: 20%;
+    display: inline-block;
+}
+
 
 .carousel-inner{
 
     justify-content: center;
+    text-align: center;
 }
 
 @media (max-width:1015px){
-    body{
-        background-color:;
-    }
+    
 }
 
-@media (max-width:390px){
+@media (max-width:490px){
     body{
         
         text-align: center;
@@ -126,6 +258,11 @@ footer {
 
     nav{
         text-align: center;
-        width: 30px;
+        width: 30%;
+    }
+
+    img{
+        text-align: center;
+        width: 60%;
     }
 }
